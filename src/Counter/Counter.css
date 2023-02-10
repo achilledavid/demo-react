@@ -1,0 +1,57 @@
+.counter {
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+p {
+    margin: 0;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.button {
+    min-width: 25px;
+    min-height: 25px;
+    cursor: pointer;
+}
+
+.button:disabled {
+    cursor: not-allowed;
+}
+
+.bar {
+    width: 400px;
+    height: 10px;
+    border-radius: 100vmax;
+    outline: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+.inside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: green;
+    transition: 400ms ease;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    min-height: 19px;
+}
+
+.container p {
+    width: 30px;
+}
